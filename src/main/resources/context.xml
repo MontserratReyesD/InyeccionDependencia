@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd
+	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!--Actualmente Spring lo hace así-->
+	
+	<context:component-scan base-package="mx.edu.uacm"></context:component-scan>
+	
+	<!--
+	Configuracion del contenedor en version anterior de Spring
+	
+	<bean id="chacos" class="mx.edu.uacm.Chacos"></bean>
+	
+	<bean id="ninja" class="mx.edu.uacm.Ninja">
+	
+	Aqui empiezan las inyecciones de dependencias
+	<property name="arma" ref="chacos"></property>
+	<property name="mision" value="pasar nivel uno"></property>
+	
+	</bean> 
+	-->
+	
+</beans>
